@@ -1,5 +1,4 @@
 *{
-	margin: 0;
 	padding: 0;
 	margin: 0 auto;
 }
@@ -10,6 +9,14 @@ header{
 	justify-content:center;
 	margin: 5px;
 	width: 90%;
+}
+
+@media (min-width: 300px) and (max-width: 768px){
+
+	header {
+		flex-flow: column;
+		width: 100%;
+	}
 }
 
 .container{
@@ -31,6 +38,12 @@ header{
 	justify-content: center;
 }
 
+@media (min-width: 300px) and (max-width: 768px){
+
+	img {
+		padding: 2px;
+	}
+}
 
 label{
 	padding: 0 10px;
